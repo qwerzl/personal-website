@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "vercel-build": "vite build",
+    "build": "echo 'Do not call it!'",
+    "vercel-build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
