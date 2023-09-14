@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^0.55.7
     version: 0.55.7
   typescript:
-    specifier: ^4.9.4
-    version: 4.9.4
+    specifier: ^5.0.0
+    version: 5.2.2
   unocss:
     specifier: ^0.55.7
     version: 0.55.7(postcss@8.4.29)(vite@3.2.7)
@@ -1811,9 +1811,9 @@ packages:
     resolution: {integrity: sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==}
     dev: true
 
-  /typescript@4.9.4:
-    resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
-    engines: {node: '>=4.2.0'}
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
     hasBin: true
     dev: true
 
