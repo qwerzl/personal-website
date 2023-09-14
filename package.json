@@ -14,17 +14,15 @@
     "@unocss/preset-icons": "^0.47.5",
     "@unocss/preset-typography": "^0.47.5",
     "typescript": "^4.9.4",
-    "unocss": "^0.47.5",
-    "vite": "^3.2.5",
+    "unocss": "^0.55.7",
+    "vite": "^3.2.7",
     "vite-plugin-solid": "^2.4.0"
   },
   "dependencies": {
-    "@egjs/grid": "^1.14.2",
-    "@unocss/reset": "^0.47.5",
+    "@unocss/reset": "^0.55.7",
     "axios": "^1.5.0",
-    "dayjs": "^1.11.7",
-    "solid-infinite-scroll": "^1.0.1",
-    "solid-js": "^1.6.3",
+    "dayjs": "^1.11.9",
+    "solid-js": "^1.7.11",
     "solid-mason": "^0.1.5",
     "vite-plugin-ssr": "0.4.54"
   }
