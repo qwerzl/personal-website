@@ -11,11 +11,11 @@ export default (props: Props) => {
   const { data } = props
   return (
     <a
-      class="px-4 py-3 rounded-md bg-gray-50 transition-colors decoration-none hover:bg-gray-100 dark:bg-gray-50/10 dark:hover:bg-gray-50/20"
+      class="px-4 py-3 rounded-md transition-colors decoration-none bg-gray-50/10 hover:bg-gray-50/20"
       href={data.link}
       target="_blank"
     >
-      <div class="flex h-full items-center justify-center">
+      <div class="flex h-full items-center justify-center text-white">
         <div mr-4 text-4xl>
           <div class={data.icon} />
         </div>

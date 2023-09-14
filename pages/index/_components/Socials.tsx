@@ -13,7 +13,7 @@ const SocialItem = (props: SocialProps) => {
   const { data } = props
   return (
     <a
-      class={`inline-flex px-3 py-2 mt-2 mr-2 rounded-md bg-gray-50 transition-colors decoration-none ${data.class} hover:text-white dark:bg-gray-50/10`}
+      class={`inline-flex px-3 py-2 mt-2 mr-2 rounded-md  transition-colors decoration-none ${data.class} hover:text-white bg-gray-50/10`}
       href={data.link}
       target="_blank"
     >
@@ -40,7 +40,7 @@ export default () => {
       text: 'Unsplash',
       link: 'https://unsplash.com/qwerzl',
       icon: 'i-fa-brands-unsplash',
-      class: 'hover:bg-gray-700 dark:hover:bg-white dark:hover:text-gray-900'
+      class: 'hover:bg-white hover:text-gray-900'
     },{
       text: 'Instagram',
       link: 'https://www.instagram.com/ttqwerzl/',

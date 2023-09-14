@@ -30,7 +30,7 @@ export default () => {
   }
   return (
     <>
-      <h2 class="flex items-center mt-14 mb-4 font-semibold text-3xl">
+      <h2 class="flex items-center mt-14 mb-4 font-semibold text-3xl text-white">
         <span flex-1 class="title">Projects</span>
         <div
           onClick={openLink}

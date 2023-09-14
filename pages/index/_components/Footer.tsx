@@ -1,6 +1,6 @@
 export default () => {
   return (
-    <footer mt-12>
+    <footer mt-12 class="text-slate">
       <p text-sm op-40>
         qwerzl © 2023.
       </p>
