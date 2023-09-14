@@ -1,5 +1,5 @@
 {
-  "name": "ddiu.me",
+  "name": "qwerzl.me",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -19,9 +19,13 @@
     "vite-plugin-solid": "^2.4.0"
   },
   "dependencies": {
+    "@egjs/grid": "^1.14.2",
     "@unocss/reset": "^0.47.5",
+    "axios": "^1.5.0",
     "dayjs": "^1.11.7",
+    "solid-infinite-scroll": "^1.0.1",
     "solid-js": "^1.6.3",
+    "solid-mason": "^0.1.5",
     "vite-plugin-ssr": "0.4.54"
   }
 }

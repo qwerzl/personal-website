@@ -24,7 +24,7 @@ const PostItem = (props: PostProps) => {
 export default () => {
   const [postLists] = createResource(getLatestPosts)
   const openLink = () => {
-    window.open('https://notes.ljl.li', '_blank')
+    window.open('https://blog.qwerzl.me', '_blank')
   }
   return (
     <>
@@ -32,7 +32,7 @@ export default () => {
         <span flex-1 class="title">Latest Posts</span>
         <div
           onClick={openLink}
-          class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer" 
+          class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer"
         >
           <div class="m-2 i-ri-arrow-right-up-line" ></div>
         </div>
