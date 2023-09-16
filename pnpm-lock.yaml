@@ -21,8 +21,8 @@ dependencies:
     specifier: ^0.1.5
     version: 0.1.5(solid-js@1.7.11)
   vite-plugin-ssr:
-    specifier: 0.4.140
-    version: 0.4.140(vite@4.4.9)
+    specifier: 0.4.141
+    version: 0.4.141(vite@4.4.9)
 
 devDependencies:
   '@iconify-json/fa-brands':
@@ -1976,8 +1976,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-ssr@0.4.140(vite@4.4.9):
-    resolution: {integrity: sha512-UcUOszxAdf2Kau4VbVeNRZwVvINtrQIuI8NzuwXXW41nq2f2ej9T/+8uRF6ICUi99Y0HwiK1kZX0+Ox7oY17gg==}
+  /vite-plugin-ssr@0.4.141(vite@4.4.9):
+    resolution: {integrity: sha512-mRYP7CWauioeCFWFhzNjYK/4Gv+mtfClM4oj5NZrHS3kmd2vQ/uHENOSccFZniqRTZoMzQoufqpGTd+1uT9vEg==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     peerDependencies:
