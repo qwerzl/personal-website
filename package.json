@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.55.7",
+    "@vercel/analytics": "^1.0.2",
     "axios": "^1.5.0",
     "dayjs": "^1.11.9",
     "solid-js": "^1.7.11",

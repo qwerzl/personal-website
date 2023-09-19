@@ -1,4 +1,5 @@
 import type { Component } from 'solid-js'
+import { inject } from '@vercel/analytics';
 
 import Hero from './_components/Hero'
 import Projects from './_components/Projects'
@@ -10,6 +11,8 @@ const documentProps = {
   title: 'qwerzl\'s Website',
   description: 'qwerzl'
 }
+
+inject()
 
 const Page: Component = () => {
   return (
