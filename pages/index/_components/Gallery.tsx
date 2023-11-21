@@ -2,7 +2,7 @@ import Masonry from "./Masonry";
 import { createScrollPosition } from '@solid-primitives/scroll'
 import {createSignal, onMount} from "solid-js";
 
-function convertRemToPixels(rem) {
+function convertRemToPixels(rem: number) {
     return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 
