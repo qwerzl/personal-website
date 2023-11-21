@@ -14,9 +14,11 @@ export default () => {
     let header: HTMLHeadingElement | ((el: HTMLHeadingElement) => void) | undefined;
     onMount(() => {
         if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)){
+            // @ts-ignore
             setOffsetTop(header.offsetTop-convertRemToPixels(1.7))
             // Safari and Chromium seem to behave differently on offsetTop...
         } else {
+            // @ts-ignore
             setOffsetTop(header.offsetTop+convertRemToPixels(1))
         }
     })
