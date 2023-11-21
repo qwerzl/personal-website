@@ -15,7 +15,7 @@ export default () => {
     onMount(() => {
         if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)){
             // @ts-ignore
-            setOffsetTop(header.offsetTop-convertRemToPixels(5))
+            setOffsetTop(header.offsetTop-convertRemToPixels(1.6))
             // Safari and Chromium seem to behave differently on offsetTop...
         } else {
             // @ts-ignore
@@ -28,7 +28,7 @@ export default () => {
         <>
             <style>{`
                 .hidden {
-                    display: none;
+                    visibility: hidden;
                 }
             `}</style>
             <h2 class="flex items-center mb-4 font-semibold text-3xl mt-14"
