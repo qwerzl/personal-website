@@ -37,3 +37,7 @@ html {
 ::-webkit-scrollbar-track {
   background-color: var(--c-bg);
 }
+.sticky {
+  position: fixed;
+  top: 2.5rem;
+}

@@ -1,19 +1,45 @@
 import Masonry from "./Masonry";
+import { createScrollPosition } from '@solid-primitives/scroll'
+import {createSignal, onMount} from "solid-js";
+import {create} from "axios";
 
+function convertRemToPixels(rem) {
+    return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
 
 export default () => {
     const openLink = () => {
         window.open('https://unsplash.com/qwerzl', '_blank')
     }
+    const [offsetTop, setOffsetTop] = createSignal(0);
+    let header: HTMLHeadingElement | ((el: HTMLHeadingElement) => void) | undefined;
+    onMount(() => {
+        if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)){
+            setOffsetTop(header.offsetTop-convertRemToPixels(1.7))
+            // Safari and Chromium seem to behave differently on offsetTop...
+        } else {
+            setOffsetTop(header.offsetTop+convertRemToPixels(1))
+        }
+    })
+
+    const ws = createScrollPosition()
     return (
         <>
-            <h2 class="flex items-center mt-14 mb-4 font-semibold text-3xl">
-                <span flex-1 class="title text-white">Popular Photos</span>
+            <h2 class="flex items-center mb-4 font-semibold text-3xl"
+                classList={{
+                    ["fixed top-0 mt-10 items-center mb-4 w-full"]: offsetTop()<(ws.y),
+                    ["mt-14"]: offsetTop()>(ws.y)
+                }}
+                ref={header}
+                onClick={openLink}
+            >
+                <span flex-1 class="title text-white">
+                    Popular Photos
+                </span>
                 <div
-                    onClick={openLink}
                     class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer"
                 >
-                    <div class="m-2 i-ri-arrow-right-up-line text-white" ></div>
+                    <div class="m-2 i-ri-arrow-right-up-line text-white" onClick={openLink}></div>
                 </div>
             </h2>
             <Masonry />
