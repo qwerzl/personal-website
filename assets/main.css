@@ -6,8 +6,9 @@
 }
 
 html {
-  background-color: #35155D;
+  background-color: #212121;
   font-family: 'IBM Plex Sans', sans-serif;
+  /*font-family: sans-serif;*/
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +22,7 @@ html {
 
 .title {
   font-family: 'Hubot Sans', sans-serif;
+  /*font-family: sans-serif;*/
 }
 
 ::-webkit-scrollbar {
