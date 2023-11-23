@@ -2,6 +2,7 @@ import { createResource, Index } from 'solid-js'
 import dayjs from 'dayjs'
 import { getLatestPosts } from '../api'
 import type { PostMeta } from '../api'
+import Heading from "./Heading";
 
 interface PostProps {
   data: PostMeta
@@ -23,20 +24,15 @@ const PostItem = (props: PostProps) => {
 
 export default () => {
   const [postLists] = createResource(getLatestPosts)
-  const openLink = () => {
-    window.open('https://blog.qwerzl.me', '_blank')
-  }
   return (
     <>
-      <h2 class="flex items-center mt-14 mb-4 font-semibold text-3xl">
-        <span flex-1 class="title text-white">Latest Posts</span>
-        <div
-          onClick={openLink}
-          class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer"
-        >
-          <div class="m-2 i-ri-arrow-right-up-line text-white" ></div>
-        </div>
-      </h2>
+      <Heading
+          url="https://blog.qwerzl.me"
+          title="Latest Posts"
+          offsetTopChrome={-6}
+          offsetTopSafari={-8}
+          offsetWidthSafari={3}
+      />
       <div class="grid grid-cols-1 -mx-2 text-white">
         <Index each={postLists()}>
           {item => (

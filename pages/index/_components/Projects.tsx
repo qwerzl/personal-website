@@ -1,5 +1,6 @@
 import { Index } from 'solid-js'
 import ProjectItem from './ProjectItem'
+import Heading from "./Heading";
 
 export default () => {
   const projectLists = [
@@ -25,20 +26,16 @@ export default () => {
       icon: 'i-fluent-emoji-flat-headphone',
     },
   ]
-  const openLink = () => {
-    window.open('https://github.com/qwerzl', '_blank')
-  }
+
   return (
     <>
-      <h2 class="flex items-center mt-14 mb-4 font-semibold text-3xl text-white">
-        <span flex-1 class="title">Projects</span>
-        <div
-          onClick={openLink}
-          class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer"
-        >
-          <div class="m-2 i-ri-arrow-right-up-line" ></div>
-        </div>
-      </h2>
+      <Heading
+          url='https://github.com/qwerzl'
+          title="Projects"
+          offsetTopChrome={-6}
+          offsetTopSafari={-8}
+          offsetWidthSafari={10}
+      />
       <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
         <Index each={projectLists}>
           {item => (

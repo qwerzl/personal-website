@@ -1,4 +1,4 @@
-import { renderPage } from 'vite-plugin-ssr'
+import { renderPage } from 'vite-plugin-ssr/server'
 
 // We use JSDoc instead of TypeScript because Vercel seems buggy with /api/**/*.ts files
 
