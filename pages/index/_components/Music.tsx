@@ -66,7 +66,7 @@ export default () => {
   return (
     <>
       <Heading
-        url="https://last.fm/qwerzl"
+        url="https://last.fm/user/qwerzl"
         title="Music I'm Listening to"
         offsetTopChrome={6}
         offsetTopSafari={5.5}
