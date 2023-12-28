@@ -1,4 +1,3 @@
-import { createScrollPosition } from '@solid-primitives/scroll'
 import {createSignal, onCleanup, onMount} from "solid-js";
 
 function convertRemToPixels(rem: number) {
@@ -13,7 +12,6 @@ export default function Heading(props: {
     const openLink = () => {
         window.open(props.url, '_blank')
     }
-    const [offsetTop, setOffsetTop] = createSignal(0);
     const [offsetWidth, setOffsetWidth] = createSignal(0);
     let header: HTMLHeadingElement | ((el: HTMLHeadingElement) => void) | undefined;
 
@@ -22,13 +20,9 @@ export default function Heading(props: {
         if (typeof(header) !== "undefined" && "offsetWidth" in header) {
             if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
                 // Safari and Chromium seem to behave differently on offsetTop/Width...
-                // setOffsetTop(header.offsetTop + convertRemToPixels(5.5))
-                setOffsetTop(header.offsetTop + convertRemToPixels(props.offsetTopSafari))
                 // setOffsetWidth(header.offsetWidth + convertRemToPixels(3))
                 setOffsetWidth(header.offsetWidth + convertRemToPixels(props.offsetWidthSafari))
             } else {
-                // setOffsetTop(header.offsetTop + convertRemToPixels(6))
-                setOffsetTop(header.offsetTop + convertRemToPixels(props.offsetTopChrome))
                 setOffsetWidth(header.offsetWidth)
             }
         }
@@ -48,7 +42,6 @@ export default function Heading(props: {
         }
     })
 
-    const ws = createScrollPosition()
     return (
         <>
             <style>{`
