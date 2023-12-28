@@ -6,6 +6,7 @@ import Projects from './_components/Projects'
 import Posts from './_components/Posts'
 import Footer from './_components/Footer'
 import Gallery from "./_components/Gallery";
+import Music from "./_components/Music";
 
 const documentProps = {
   title: 'qwerzl\'s Website',
@@ -20,6 +21,8 @@ const Page: Component = () => {
         <Hero />
         <Projects />
         <Posts />
+        <Music />
+
         <Gallery />
         <Footer />
       </div>
