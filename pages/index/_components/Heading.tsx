@@ -52,26 +52,26 @@ export default function Heading(props: {
     return (
         <>
             <style>{`
-                .hidden {
-                    visibility: hidden;
-                }                
-                .title {
-                    width: ${offsetWidth()}px;
+                .header {
+                  width: 100%;
+                  height: 5rem;
+                  position: sticky;
+                  top: 0;
                 }
                 .divider {
                     width: ${offsetWidth()}px;
                 }
             `}</style>
-            <h2 class="flex flex-wrap items-center mb-4 font-semibold text-3xl mt-14"
-                classList={{
-                    //["fixed top-0 mt-10 items-center mb-4 w-full"]: offsetTop()<(ws.y),
-                    //["mt-14"]: offsetTop()>(ws.y)
-                    ["hidden"]: offsetTop()<(ws.y)
-                }}
+            <h2 class="flex flex-wrap items-center mb-4 font-semibold text-3xl mt-14 header z-50 bg-[#212121] prose-invert dark title"
+                // classList={{
+                //     //["fixed top-0 mt-10 items-center mb-4 w-full"]: offsetTop()<(ws.y),
+                //     //["mt-14"]: offsetTop()>(ws.y)
+                //     ["hidden"]: offsetTop()<(ws.y)
+                // }}
                 ref={header}
                 onClick={openLink}
             >
-                <span flex-1 class="title text-white">
+                <span flex-1 class="title text-white mt-1">
                     {props.title}
                 </span>
                 <div
@@ -83,24 +83,24 @@ export default function Heading(props: {
 
             </h2>
 
-            <h2 class="flex flex-wrap items-center mb-4 font-semibold text-3xl fixed top-0 items-center z-50 bg-[#212121] prose-invert dark title container"
-                classList={{
-                    ["hidden"]: offsetTop()>(ws.y)
-                }}
-            >
+            {/*<h2 class="flex flex-wrap items-center mb-4 font-semibold text-3xl fixed top-0 items-center z-50 bg-[#212121] prose-invert dark title container"*/}
+            {/*    classList={{*/}
+            {/*        ["hidden"]: offsetTop()>(ws.y)*/}
+            {/*    }}*/}
+            {/*>*/}
 
-                <span flex-1 class="title text-white mt-15">
-                    {props.title}
-                </span>
-                <div
-                    class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer"
-                >
-                    <div class="m-2 i-ri-arrow-right-up-line text-white mt-15" onClick={openLink}></div>
+            {/*    <span flex-1 class="title text-white mt-15">*/}
+            {/*        {props.title}*/}
+            {/*    </span>*/}
+            {/*    <div*/}
+            {/*        class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer"*/}
+            {/*    >*/}
+            {/*        <div class="m-2 i-ri-arrow-right-up-line text-white mt-15" onClick={openLink}></div>*/}
 
-                </div>
-                <hr class={`h-px my-1 bg-white border-0 divider`} />
+            {/*    </div>*/}
+            {/*    <hr class={`h-px my-1 bg-white border-0 divider`} />*/}
 
-            </h2>
+            {/*</h2>*/}
         </>
     )
 }
