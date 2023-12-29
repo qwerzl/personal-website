@@ -18,13 +18,13 @@ const render = (pageContext: PageContext) => {
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <meta name="author" content="Diu" />
+        <meta name="author" content="qwerzl" />
         <meta property="og:title" content="qwerzl" />
         <meta property="og:image" content="https://avatars.githubusercontent.com/u/46770502?v=4" />
         <meta property="description" content="${description}" />
         <meta property="og:description" content="${description}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://ddiu.io/" />
+        <link rel="canonical" href="https://qwerzl.me/" />
         <link rel="icon" href="/favicon.ico" />
         <title>${title}</title>
         ${dangerouslySkipEscape(generateHydrationScript())}
