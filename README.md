@@ -12,4 +12,4 @@ Source Codes are under [MIT license](https://github.com/ddiu8081/ddiu.me/blob/ma
 
 Articles and descriptions are under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
 
-This website is made possible with [SolidJS](https://solidjs.com), [TailwindCSS](https://tailwindcss.com), [Last.FM](https://last.fm) and [Unsplash](https://unsplash.com).
+This website is made possible with [SolidJS](https://solidjs.com), [UnoCSS](https://unocss.dev), [Last.FM](https://last.fm) and [Unsplash](https://unsplash.com).
