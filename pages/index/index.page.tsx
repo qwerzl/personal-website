@@ -7,6 +7,7 @@ import Posts from './_components/Posts'
 import Footer from './_components/Footer'
 import Gallery from "./_components/Gallery";
 import Music from "./_components/Music";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const documentProps = {
   title: 'qwerzl\'s Website',
@@ -18,6 +19,7 @@ inject()
 const Page: Component = () => {
   return (
       <div class="px-6 py-[8vh] max-w-[76ch] mx-auto xl:text-lg prose-invert dark">
+        <SpeedInsights />
         <Hero />
         <Projects />
         <Posts />
