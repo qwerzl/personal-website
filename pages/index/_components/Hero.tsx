@@ -6,18 +6,18 @@ export default () => {
 
     return (
         <header class="mt-12 md:mt-18 text-white">
-            <h1 class="title text-5xl font-bold ">
+            <h1 class="title text-5xl font-bold">
                 <span class="block" id="greeting">Hello, </span>
                 <span class="block mt-2">I'm qwerzl.</span>
             </h1>
             <div class="mt-6">
                 <div>
-                    <span>CG&CS Enthusiast. </span>
+                  <span><b class="font-bold">CG&CS</b> Enthusiast. </span>
                 </div>
-                <div mt-2>
+                <div class="mt-2">
                     <span>WFLA '25, Computerization '23 Leader.</span>
                 </div>
-                <div mt-2>
+                <div class="mt-2">
                     <span>Feel free to communicate with me in English; Chinese, Shanghainese, French are also welcome.</span>
                 </div>
             </div>

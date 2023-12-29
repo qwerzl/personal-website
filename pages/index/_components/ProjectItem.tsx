@@ -21,7 +21,7 @@ export default (props: Props) => {
         </div>
         <div flex-1>
           <div font-medium leading-relaxed>{data.name}</div>
-          <div op-50 font-normal text-sm>{data.desc}</div>
+          <div op-50 font-mono text-sm>{data.desc}</div>
         </div>
       </div>
     </a>

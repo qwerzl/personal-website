@@ -53,7 +53,7 @@ const ArtistItem = (props: topArtists) => {
       target="_blank"
     >
       <div flex-1>{ data.name }</div>
-      <div op-40 font-normal class="hidden sm:block" onClick={[openLink, data.url]}><div class="italic inline-block">Play count:</div> { data.playcount }</div>
+      <div op-40 font-normal class="hidden sm:block" onClick={[openLink, data.url]}>Play count: { data.playcount }</div>
     </a>
   )
 }
