@@ -47,8 +47,8 @@ devDependencies:
     specifier: ^1.1.4
     version: 1.1.4
   '@unocss/preset-icons':
-    specifier: ^0.55.7
-    version: 0.55.7
+    specifier: ^0.58.0
+    version: 0.58.2
   '@unocss/preset-typography':
     specifier: ^0.55.7
     version: 0.55.7
@@ -57,7 +57,7 @@ devDependencies:
     version: 5.2.2
   unocss:
     specifier: ^0.55.7
-    version: 0.55.7(postcss@8.4.29)(vite@5.0.10)
+    version: 0.55.7(postcss@8.4.32)(vite@5.0.10)
   vite:
     specifier: ^5.0.0
     version: 5.0.10
@@ -836,6 +836,19 @@ packages:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
+  /@iconify/utils@2.1.14:
+    resolution: {integrity: sha512-9pKIntkbLbjVVFxH32td21Am3AGGJfyI2KY2d8yDQxkZe4BBZtufJI8NgcamFn8B5QKLU9ai2VMo8OEov8jAtw==}
+    dependencies:
+      '@antfu/install-pkg': 0.1.1
+      '@antfu/utils': 0.7.6
+      '@iconify/types': 2.0.0
+      debug: 4.3.4
+      kolorist: 1.8.0
+      local-pkg: 0.4.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@iconify/utils@2.1.9:
     resolution: {integrity: sha512-mo+A4n3MwLlWlg1SoSO+Dt6pOPWKElk9sSJ6ZpuzbB9OcjxN8RUWxU3ulPwB1nglErWKRam2x4BAohbYF7FiFA==}
     dependencies:
@@ -1117,6 +1130,10 @@ packages:
     resolution: {integrity: sha512-c+bWe844Xjlwc1EPwHj0+n3LpntJG7ELPbEOOxNIG+CQdcEX0l1G0rkM8+nKstJ9WJmgpf1HdJQLVMF62HXvhw==}
     dev: true
 
+  /@unocss/core@0.58.2:
+    resolution: {integrity: sha512-TYU6IRgnsZGVXpca6FYuXa3iJ1zI3hxgRhnb7TwE9j5t2GY4a/mjvg0K3MdiC8rzPP5hWWd9NXivBfJsr1SQpQ==}
+    dev: true
+
   /@unocss/extractor-arbitrary-variants@0.55.7:
     resolution: {integrity: sha512-imK2g/frlo5Ag0uVB+C/Psyo5+9AnqhoRAgYa6gyrQ/TJnrnwf+M3jFngU9evIMHw92vig1DGfPa2ZId901DwQ==}
     dependencies:
@@ -1130,7 +1147,7 @@ packages:
       sirv: 2.0.3
     dev: true
 
-  /@unocss/postcss@0.55.7(postcss@8.4.29):
+  /@unocss/postcss@0.55.7(postcss@8.4.32):
     resolution: {integrity: sha512-53Z/yv/CNdlTqKZQ9gpYRoLZSuzQ28J0SDrGCdzwjLcvHG/FD7/x1S7yxE7cUp/4sjvLL15HSzkWq8vNy6SkwQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1141,7 +1158,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.1
       magic-string: 0.30.3
-      postcss: 8.4.29
+      postcss: 8.4.32
     dev: true
 
   /@unocss/preset-attributify@0.55.7:
@@ -1155,6 +1172,16 @@ packages:
     dependencies:
       '@iconify/utils': 2.1.9
       '@unocss/core': 0.55.7
+      ofetch: 1.3.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@unocss/preset-icons@0.58.2:
+    resolution: {integrity: sha512-fN70AUDK635B1Ls2Td5nyJogwjbcnyMOscD6zvgGWn0O9YH5EXr7Wtww4Kd0We7TgglGuHpf5GIwFwllpcUfsQ==}
+    dependencies:
+      '@iconify/utils': 2.1.14
+      '@unocss/core': 0.58.2
       ofetch: 1.3.3
     transitivePeerDependencies:
       - supports-color
@@ -1379,7 +1406,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /color-convert@1.9.3:
@@ -1612,14 +1639,6 @@ packages:
       mime-types: 2.1.35
     dev: false
 
-  /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -1817,12 +1836,6 @@ packages:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
 
-  /nanoid@3.3.6:
-    resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-    dev: true
-
   /nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -1908,15 +1921,6 @@ packages:
       jsonc-parser: 3.2.0
       mlly: 1.4.2
       pathe: 1.1.1
-    dev: true
-
-  /postcss@8.4.29:
-    resolution: {integrity: sha512-cbI+jaqIeu/VGqXEarWkRCCffhjgXc0qjBtXpqJhTBohMUjUQnbBr0xqX3vEKudc4iviTewcJo5ajcec5+wdJw==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.6
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
     dev: true
 
   /postcss@8.4.32:
@@ -2115,7 +2119,7 @@ packages:
       mlly: 1.4.2
     dev: true
 
-  /unocss@0.55.7(postcss@8.4.29)(vite@5.0.10):
+  /unocss@0.55.7(postcss@8.4.32)(vite@5.0.10):
     resolution: {integrity: sha512-3W9P7vj2EhSk/4oPCHBS0VgrwSf5zZL6Az1/XARVOpBnRJtCM2szFInYxHkMgt9pkZTsW8SFCuk/g+QIJ6A8tg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2131,7 +2135,7 @@ packages:
       '@unocss/cli': 0.55.7
       '@unocss/core': 0.55.7
       '@unocss/extractor-arbitrary-variants': 0.55.7
-      '@unocss/postcss': 0.55.7(postcss@8.4.29)
+      '@unocss/postcss': 0.55.7(postcss@8.4.32)
       '@unocss/preset-attributify': 0.55.7
       '@unocss/preset-icons': 0.55.7
       '@unocss/preset-mini': 0.55.7
