@@ -12,14 +12,14 @@ const render = (pageContext: PageContext) => {
 
   const { documentProps } = pageContext.exports
   const title = (documentProps && documentProps.title) || 'qwerzl'
-  const description = (documentProps && documentProps.description) || 'qwerzl'
+  const description = (documentProps && documentProps.description) || ':-)'
 
   return escapeInject`<!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
         <meta name="author" content="qwerzl" />
-        <meta property="og:title" content="qwerzl" />
+        <meta property="og:title" content="qwerzl's Website" />
         <meta property="og:image" content="https://avatars.githubusercontent.com/u/46770502?v=4" />
         <meta property="description" content="${description}" />
         <meta property="og:description" content="${description}" />

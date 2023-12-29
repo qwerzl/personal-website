@@ -18,7 +18,6 @@ inject();
 injectSpeedInsights({});
 
 const Page: Component = () => {
-
   return (
       <div class="px-6 py-[8vh] max-w-[76ch] mx-auto xl:text-lg prose-invert dark">
         <Hero />
